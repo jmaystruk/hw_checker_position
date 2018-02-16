@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.checkerboard {
+    background-color: #4ea08c;
+    background-image:
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%),
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%),
+  
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%),
+    linear-gradient(45deg, #c4e5dd 25%, transparent 25%,transparent 75%, #c4e5dd 75%, #c4e5dd 100%);
+  
+    background-size:25% 25%;
+    background-position:0 0, 50% 50%;
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.checkerboard:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.dot {
+  position: absolute;
+  width: 12.5%;
+  height: 12.5%;
+}
+
+
+.dot:before {
+  position: absolute;
+  content: '';
+  left: 10%;
+  right: 10%;
+  top: 10%;
+  bottom: 10%;
+  border-radius: 50%;
+
+}
+
+.yellow:before {
+  background-color: #ffc000;
+   transition:all .6s ease-in-out;
+}
+
+.yellow:hover::before {
+   box-shadow:inset 0 0 0 100px #fc9b01;
+}
+
+
+.x1 {
+  left: 0%;
+}
+
+.x3 {
+  left: 25%;
+}
+
+.x5 {
+  left: 50%;
+}
+
+.x7 {
+  left: 75%;
+}
+
+
+
+.x2y2 {
+  left: 12.5%;
+  top: 12.5%;
+}
+
+.x4y2 {
+  left: 37.5%;
+  top: 12.5%;
+}
+
+.x6y2 {
+  left: 62.5%;
+  top: 12.5%;
+}
+
+.x8y2 {
+  left: 87.5%;
+  top: 12.5%;
+}
+
+
+.x1y3 {
+  left: 0%;
+  top: 25%;
+}
+
+.x3y3 {
+  left: 25%;
+  top: 25%;
+}
+
+.x5y3 {
+  left: 50%;
+  top: 25%;
+}
+
+.x7y3 {
+  left: 75%;
+  top: 25%;
+}
+
+
+.green:before {
+  background-color: #bfeb60;
+  transition:all .6s ease-in-out;
+}
+
+.green:hover::before {
+   box-shadow:inset 0 0 0 100px #97d64c;
+}
+
+.x2y8 {
+  left: 12.5%;
+  top: 87.5%;
+}
+
+.x4y8 {
+  left: 37.5%;
+  top: 87.5%;
+}
+
+.x6y8 {
+  left: 62.5%;
+  top: 87.5%;
+}
+
+.x8y8 {
+  left: 87.5%;
+  top: 87.5%;
+}
+
+
+.x1y7 {
+  left: 0%;
+  top: 75%;
+}
+
+.x3y7 {
+  left: 25%;
+  top: 75%;
+}
+
+.x5y7 {
+  left: 50%;
+  top: 75%;
+}
+
+.x7y7 {
+  left: 75%;
+  top: 75%;
+}
+
+.x2y6 {
+  left: 12.5%;
+  top: 62.5%;
+}
+
+.x4y6 {
+  left: 37.5%;
+  top: 62.5%;
+}
+
+.x6y6 {
+  left: 62.5%;
+  top: 62.5%;
+}
+
+.x8y6 {
+  left: 87.5%;
+  top: 62.5%;
+}
